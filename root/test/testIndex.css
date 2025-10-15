@@ -1,0 +1,172 @@
+/* 🎂 Happy Birthday Website Stylesheet 🎉 */
+/* Think colorful confetti, cute paper textures, and fun hand-drawn vibes */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg-color: #fff8e7; /* warm paper-like background */
+  --accent1: #ff6b6b;  /* pink/red confetti */
+  --accent2: #feca57;  /* golden yellow */
+  --accent3: #48dbfb;  /* sky blue */
+  --accent4: #1dd1a1;  /* mint green */
+  --text-color: #3d3d3d;
+  --card-bg: #ffffffcc;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: var(--bg-color);
+  background-image: radial-gradient(var(--accent1) 1px, transparent 1px),
+                    radial-gradient(var(--accent2) 1px, transparent 1px),
+                    radial-gradient(var(--accent3) 1px, transparent 1px),
+                    radial-gradient(var(--accent4) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: 0 0, 20px 40px, 40px 20px, 60px 60px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: var(--accent1);
+  text-shadow: 2px 2px var(--shadow);
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.white-background {
+    background-color: white;
+    display: block;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 16px var(--shadow);
+  width: 90%;
+  max-width: 600px;
+  border: 3px dashed var(--accent3);
+}
+
+button {
+  background: linear-gradient(135deg, var(--accent1), var(--accent2));
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+/* Optional confetti animation for extra sparkle */
+@keyframes floatyConfetti {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(300px) rotate(360deg); opacity: 0; }
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--accent1);
+  border-radius: 50%;
+  animation: floatyConfetti 4s linear infinite;
+  opacity: 0.8;
+}
+
+/* A few variants for colorful confetti pieces */
+.confetti:nth-child(3n) { background: var(--accent2); animation-delay: 1s; }
+.confetti:nth-child(3n+1) { background: var(--accent3); animation-delay: 2s; }
+.confetti:nth-child(3n+2) { background: var(--accent4); animation-delay: 3s; }
+
+/* 🖼️ Happy Birthday Image Style — like it's pasted onto the card! */
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+  border: 8px solid #fff; /* white frame like a photo border */
+  border-radius: 12px 50px 12px 50px; /* uneven corners for playful, handmade look */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* gives it depth on the card */
+  transform: rotate(-1.5deg); /* slight tilt for “glued on by hand” vibe */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: give it a little tape decoration on the corners */
+.img-taped {
+  position: relative;
+  display: inline-block;
+}
+
+.img-taped::before,
+.img-taped::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background: rgba(255, 255, 200, 0.8); /* yellowish tape color */
+  top: -10px;
+  transform: rotate(-5deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.img-taped::before {
+  left: 10%;
+}
+
+.img-taped::after {
+  right: 10%;
+  transform: rotate(5deg);
+}
+
+.toggle-age {
+  background: linear-gradient(135deg, var(--accent2), var(--accent3));
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toggle-age:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+

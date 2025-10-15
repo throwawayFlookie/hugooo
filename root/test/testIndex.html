@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="testIndex.css">
+
+  <script>
+    const button = document.querySelector('.toggle-age');
+    const ageElements = document.querySelectorAll('.age');
+    let current = 5; // start at 5
+
+    button.addEventListener('click', () => {
+        if (current === 5) current = 6;
+        else if (current === 6) current = 16;
+        else current = 5; // loops back to 5
+
+        ageElements.forEach(el => el.textContent = current);
+    });
+</script>
+
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <p>Wishing you a day filled with laughter, color, and cake!</p>
+    <button>Make a Wish ✨</button>
+    <br><br>
+    <div class="white-background">
+        <img src="../assets/images/pointingOnCake.png">
+    </div>
+    <p>Wow, can you believe hes <span class="age">5</span> already?!</p>
+    <button class="toggle-age">Toggle Age</button>
+  </div>
+
+  <!-- optional confetti elements -->
+  <div class="confetti" style="left:10%;animation-delay:0s;"></div>
+  <div class="confetti" style="left:30%;animation-delay:0.5s;"></div>
+  <div class="confetti" style="left:50%;animation-delay:1s;"></div>
+  <div class="confetti" style="left:70%;animation-delay:1.5s;"></div>
+  <div class="confetti" style="left:90%;animation-delay:2s;"></div>
+</body>
+</html>

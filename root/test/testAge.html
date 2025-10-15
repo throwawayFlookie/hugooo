@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6 ↔ 16 Toggle</title>
+<style>
+  body {
+    font-family: sans-serif;
+    padding: 2rem;
+    line-height: 1.6;
+    background: #fafafa;
+  }
+
+  button {
+    background: #4c8bf5;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  button:hover {
+    background: #3a6ddf;
+  }
+</style>
+</head>
+<body>
+
+<h1>Example Text</h1>
+<p id="content">
+  The number 6 is smaller than 16, but sometimes 16 feels luckier than 6.
+  I have 6 apples and 16 oranges.
+</p>
+
+<button id="toggle-btn">Toggle 6 ↔ 16</button>
+
+<script>
+  const button = document.getElementById('toggle-btn');
+  const content = document.getElementById('content');
+  let showingSix = true; // tracks current state
+
+  button.addEventListener('click', () => {
+    let text = content.innerHTML;
+
+    if (showingSix) {
+      // Replace 6 with a temporary placeholder to avoid conflicts
+      text = text.replace(/16/g, '__TEMP__');
+      text = text.replace(/6/g, '16');
+      text = text.replace(/__TEMP__/g, '6');
+      button.textContent = "Toggle 16 ↔ 6";
+    } else {
+      // Same logic but reversed
+      text = text.replace(/6/g, '__TEMP__');
+      text = text.replace(/16/g, '6');
+      text = text.replace(/__TEMP__/g, '16');
+      button.textContent = "Toggle 6 ↔ 16";
+    }
+
+    showingSix = !showingSix;
+    content.innerHTML = text;
+  });
+</script>
+
+</body>
+</html>
