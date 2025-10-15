@@ -109,43 +109,14 @@ img {
   border: 8px solid #fff; /* white frame like a photo border */
   border-radius: 12px 50px 12px 50px; /* uneven corners for playful, handmade look */
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* gives it depth on the card */
-  transform: rotate(-1.5deg); /* slight tilt for “glued on by hand” vibe */
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  /*transform: rotate(-1.5deg); /* slight tilt for “glued on by hand” vibe */
+  /*transition: transform 0.2s ease, box-shadow 0.3s ease;*/
 }
 
-img:hover {
+/*img:hover {
   transform: rotate(0deg) scale(1.03);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Optional: give it a little tape decoration on the corners */
-.img-taped {
-  position: relative;
-  display: inline-block;
-}
-
-.img-taped::before,
-.img-taped::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 20px;
-  background: rgba(255, 255, 200, 0.8); /* yellowish tape color */
-  top: -10px;
-  transform: rotate(-5deg);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  border-radius: 3px;
-}
-
-.img-taped::before {
-  left: 10%;
-}
-
-.img-taped::after {
-  right: 10%;
-  transform: rotate(5deg);
-}
+}*/
 
 button #toggle-btn {
     background: #4c8bf5;

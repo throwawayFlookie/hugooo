@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     walk(document.body); // start from the whole body
-    button.textContent = showingSix ? "Toggle 16 ↔ 6" : "Toggle 6 ↔ 16";
+    button.textContent = showingSix ? "16 ↔ 6" : "6 ↔ 16";
     showingSix = !showingSix;
   }
 
