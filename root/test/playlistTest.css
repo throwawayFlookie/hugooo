@@ -1,0 +1,104 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: "Circular Spotify Text", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER SECTION */
+.playlist-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 60px 40px 20px;
+  background: linear-gradient(to bottom, #2d2d2d, #121212);
+}
+
+.playlist-cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  object-fit: cover;
+}
+
+.playlist-info h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.playlist-info p {
+  color: #b3b3b3;
+  margin-top: 8px;
+}
+
+.playlist-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+.profile-pic {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.separator {
+  color: #b3b3b3;
+}
+
+/* CONTENT SECTION */
+.playlist-content {
+  padding: 20px 40px 60px;
+}
+
+.song-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.song-table th {
+  text-align: left;
+  padding-bottom: 10px;
+  color: #b3b3b3;
+  font-weight: 400;
+  border-bottom: 1px solid #282828;
+}
+
+.song-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #181818;
+  vertical-align: middle;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.song img {
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.song span {
+  font-weight: 500;
+}
+
+.song-table tr:hover {
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.song-table tr:hover td {
+  color: #fff;
+}

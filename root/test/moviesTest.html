@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Watchlist</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #141414;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: #e50914; /* Netflix red */
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .movie {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .movie:hover {
+      transform: scale(1.05);
+    }
+
+    .cover {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .details {
+      display: none;
+      padding: 15px;
+      background: #181818;
+    }
+
+    .movie.open .details {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Watchlist 🎬</h1>
+
+  <div class="movie-grid">
+    <div class="movie">
+      <img src="https://image.tmdb.org/t/p/w500/8uO0gUM8aNqYLs1OsTBQiXu0fEv.jpg" class="cover" alt="Movie cover" />
+      <div class="details">
+        <h3>Inception</h3>
+        <p>We still haven’t watched this together! It’s mind-bendy, weirdly emotional, and I think we’d end up discussing it for an hour after.</p>
+      </div>
+    </div>
+
+    <div class="movie">
+      <img src="https://image.tmdb.org/t/p/w500/wtFvBcgZ7R5b7r1zy4fayzb4ZlK.jpg" class="cover" alt="Movie cover" />
+      <div class="details">
+        <h3>Spirited Away</h3>
+        <p>Because it’s cozy, dreamy, and I just know you’d fall in love with the worldbuilding and music.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll(".movie").forEach(movie => {
+      movie.addEventListener("click", () => {
+        movie.classList.toggle("open");
+      });
+    });
+  </script>
+</body>
+</html>

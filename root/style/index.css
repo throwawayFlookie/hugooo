@@ -41,6 +41,7 @@ p {
   margin: 0 auto 1rem;
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .white-background {
@@ -132,3 +133,44 @@ button #toggle-btn {
   button:hover .tgl-btn {
     background: #3a6ddf;
   }
+
+.center {
+  text-align: center;
+}
+
+.watchlist-button {
+  display: inline-block;
+  background-color: #e50914;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+}
+
+.watchlist-button:hover {
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0 6px 25px rgba(229, 9, 20, 0.5);
+}
+
+.playlist-button {
+  display: inline-block;
+  background-color: #20A253;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px #10512a;
+}
+
+.playlist-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px #197b40(229, 9, 20, 0.5);
+  color: white
+}
