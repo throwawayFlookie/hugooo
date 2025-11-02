@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(135deg, #1db954, #191414);
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.verify-box {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.verify-box h1 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.verify-box p {
+  margin-bottom: 25px;
+  color: #d9d9d9;
+}
+
+#continue-btn {
+  background: #1db954;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#continue-btn:hover {
+  background: #1ed760;
+  transform: scale(1.05);
+}
+
+.tiny {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 15px;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+  border: 8px solid #fff; /* white frame like a photo border */
+  border-radius: 12px 50px 12px 50px; /* uneven corners for playful, handmade look */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* gives it depth on the card */
+  /*transform: rotate(-1.5deg); /* slight tilt for “glued on by hand” vibe */
+  /*transition: transform 0.2s ease, box-shadow 0.3s ease;*/
+}
