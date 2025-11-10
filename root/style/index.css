@@ -174,3 +174,63 @@ button #toggle-btn {
   box-shadow: 0 6px 25px #197b40(229, 9, 20, 0.5);
   color: white
 }
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 14px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  transition: background 0.3s, transform 0.2s;
+  z-index: 100;
+}
+
+.back-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+
+.letter-button {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 100px;
+    background: #fffaf6;
+    border: 2px solid #d7cfc1;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  /* Envelope flap */
+  .letter-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #f1e6d6;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.25s ease;
+  }
+
+  /* Hover lift */
+  .letter-button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  }
+
+  /* Click press */
+  .letter-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  }
