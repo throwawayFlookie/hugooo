@@ -107,3 +107,53 @@ footer {
     font-size: 1rem;
   }
 }
+
+.changelog-container {
+    width: 350px;            /* smaller + cute */
+    max-height: 250px;       /* tweak as you like */
+    overflow-y: auto;
+    background: #eeeeee;
+    padding: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    margin: 0;               /* stays snug */
+}
+
+/* Optional: A title at the top-left */
+.changelog-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.6rem;
+}
+
+/* Items are closer together */
+.changelog-item {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Heading is small + tidy */
+.changelog-item h3 {
+    margin: 0 0 0.2rem;
+    font-size: 0.95rem;
+}
+
+/* Description is compact */
+.changelog-item p {
+    margin: 0 0 0.3rem;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Links still look nice */
+.changelog-item a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #006bb3;
+}
+
+.changelog-item a:hover {
+    text-decoration: underline;
+}
+
