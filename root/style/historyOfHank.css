@@ -1,0 +1,202 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f7f4ef;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Page title */
+
+.timeline-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+/* Timeline container */
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Vertical line */
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #d9cbb6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline entry */
+
+.hank-entry {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* Left side */
+
+.hank-entry.left {
+    left: 0;
+}
+
+/* Right side */
+
+.hank-entry.right {
+    left: 50%;
+}
+
+/* Card */
+
+.hank-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+
+.hank-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* Hank title */
+
+.hank-card h2 {
+    margin-top: 0;
+}
+
+/* Image */
+
+.hank-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Date label */
+
+.hank-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+/* Timeline dot */
+
+.hank-entry::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: -9px;
+    background: #fff;
+    border: 4px solid #d9cbb6;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Dot for right side */
+
+.hank-entry.right::after {
+    left: -9px;
+}
+
+/* Mobile layout */
+
+@media screen and (max-width: 700px) {
+
+    .timeline::after {
+        left: 20px;
+    }
+
+    .hank-entry {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+    .hank-entry.right {
+        left: 0;
+    }
+
+    .hank-entry::after {
+        left: 11px;
+    }
+}
+
+/* Hank info box */
+
+.hank-info {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 25px 30px;
+
+    background: #4a2f21; /* dark brown */
+    color: #fff8f0;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Title inside info box */
+
+.hank-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Counter box */
+
+.hank-counter {
+    margin-top: 20px;
+    padding: 12px 16px;
+
+    background: #fff4e6;
+    color: #4a2f21;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    display: inline-block;
+}
+
+.hank-counter span {
+    font-size: 1.1rem;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 8px 14px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s, transform 0.2s;
+    z-index: 100;
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}
