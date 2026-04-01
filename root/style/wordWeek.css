@@ -1,0 +1,146 @@
+body {
+  font-family: "Segoe UI", "Helvetica", sans-serif;
+  background: #f7f6fb;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.word-card {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  border-radius: 14px;
+  border: 2px solid #e4e0ff;
+  background: #fbfaff;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.word-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.word-card summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.word-card summary::after {
+  content: "▸";
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.word-card[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.word {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.pronunciation {
+  font-style: italic;
+  color: #777;
+  font-size: 1rem;
+}
+
+.word-content {
+  padding: 1.4rem;
+  border-top: 1px solid #ece8ff;
+  animation: expand 0.25s ease;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.origin {
+  background: #ffffff;
+  border-left: 4px solid #cfc8ff;
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.word-content h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.word-content p {
+  line-height: 1.6;
+}
+
+.example {
+  background: #f1efff;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.random-button {
+  display: block;
+  margin: 2rem auto;
+  background: #cfc8ff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.random-button:hover {
+  background: #bdb6ff;
+}
+
+.language-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 8px 14px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s, transform 0.2s;
+    z-index: 100;
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}
