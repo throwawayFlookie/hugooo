@@ -1,13 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f0f8ff;
-    padding: 40px;
+    background-color: #f0f8ff;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #333;
 }
 
 .task {
@@ -26,17 +22,23 @@ h1 {
 
 .task-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* priority below title */
+    align-items: flex-start;
+}
+
+.task-header span:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 .priority {
-    text-align: left;
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 6px;
     color: white;
     font-size: 0.85em;
+    margin-bottom: 5px;
 }
 
 .high { background: #e74c3c; }
@@ -53,13 +55,26 @@ h1 {
 
 .details.open {
     padding-top: 10px;
-    max-height: 200px;
+    max-height: 200px; /* limits height */
+    overflow-y: auto;  /* scrollable if content too long */
 }
 
 .arrow {
+    align-self: flex-end;
+    font-size: 1.2em;
     transition: transform 0.3s;
+    margin-top: 5px;
 }
 
 .arrow.open {
     transform: rotate(180deg);
+}
+
+@media (max-width: 480px) {
+    .task {
+        padding: 12px 15px;
+    }
+    .details.open {
+        max-height: 150px;
+    }
 }
