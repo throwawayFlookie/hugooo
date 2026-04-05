@@ -4,5 +4,5 @@ function toggleMenu() {
 
     menu.classList.toggle("open");
 
-    button.innerHTML = menu.classList.contains("open") ? "✕" : "☰";
+    button.innerHTML = menu.classList.contains("open") ? "⭐" : "🌟";
 }
