@@ -18,7 +18,7 @@
 
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 
-    z-index: 1001;
+    z-index: 9999;
 }
 
 
@@ -39,6 +39,8 @@
     transition: left 0.3s ease;
 
     box-shadow: 2px 0 12px rgba(0,0,0,0.25);
+
+    z-index: 9998;
 }
 
 

@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0f1220;
+    color: #f1f1f1;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+a {
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    /* BACK BUTTON */
+.back {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+    /* HERO CARD */
+.hero {
+    background: #1c1f35;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero h1 {
+    margin: 10px 0;
+    color: #a78bfa;
+}
+
+.subtitle {
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+    /* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #2f335c;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+    /* ARTICLE BODY */
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #c4b5fd;
+}
+
+p {
+    margin: 10px 0;
+}
+
+    /* FUN BLOCK (optional feature) */
+.note {
+    background: #2a2e4a;
+    padding: 15px;
+    border-left: 4px solid #a78bfa;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-style: italic;
+}
