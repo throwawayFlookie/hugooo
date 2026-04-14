@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <title>Article</title>
     <meta charset="UTF-8">
@@ -27,10 +27,105 @@
 
     <div class="content">
 
-        <h2>Coming Soon :D</h2>
-        <p>
-            Das Bild da oben hab ich geklaut, aber so kannst du dir mich vorstellen, wie ich das hier mache. (Ich trage dabei auch immer einen Anzug und tippe auf Hologramme)
+        <p class="note">
+            Ich bin kein profi! Das hier ist alles aus meinem eigenen Wissen.. manche Dinge sind vielleicht komisch oder falsch beschrieben, nagel mich darauf bitti nicht fest :(<br><br>
+            Ausserdem ich bin unfähig im schreiben und wahrscheinlich gibt es wieder Arsch viele Rechtschreibfehler.. naja. 
         </p>
+
+        <p>
+            Ich will hier gar nicht auf die Technischen Details eingehen, wie Websites und Server und all das funktionieren, sondern nur ganz sweet kurz erklären, wie ich das hier gemacht habe :D
+        </p>
+
+        <section> <!-- Was ist eine Website -->
+
+            <h2>Was ist eine Website??</h2>
+            <p>
+                Also ganz grundsetzlich: Eine Website ist eine "Webpage", die mit einem Domain-Namen auf irgendeinem web Server gehosted wird.<br><br>
+
+                Diese Website besteht aus verschiedenen Webpages und liegt mit dem Domain-Namen "throwawayflookie.github" auf einem Server von GitHub. (Warum der Name so kacke ist und warum GitHub erkläre ich dir gleich)
+            </p>
+
+        </section>
+
+        <section> <!-- Wie genau funktioniert diese Website technisch -->
+
+            <h2>Wie genau funktioniert diese Website technisch?</h2>
+            <p>
+                Wie bereits gesagt, wird diese Website auf GitHub gehosted.<br>
+                GitHub ist primär eine Website für Entwickler und Programmierer auf der Code gespeichert, editiert, ausgetauscht und zusammen bearbeitet werden kann.<br><br>
+                GitHub bietet aber auch den Service "GitHub pages" an, wo Projekte als Websites verwendet werden können.<br><br>
+
+                Dieses project ist also auf GitHub und deren Server haben es gespeichert. Den Code kannst du dir sogar auf GitHub komplett anschauen, wenn du möchtest! <a href="https://github.com/throwawayFlookie/hugooo">GitHub</a>
+            </p>
+
+            <h4>Also warum mache ich das so?</h4>
+            <p>
+                Server kosten Geld.. und wie du weisst, habe ich weniger als kein Geld.<br>
+                Man muss monatlich Geld zahlen, um Server zu mieten und man muss eine Domain kaufen.<br>
+                Dadurch, dass ich diesen kostenlosen Service benutze habe ich aber leider keine custom Domain (deswegen da oben diese hässliche Adresse) und ich habe keine volle Kontrolle über die Server, was zu einem weiteren Problem führt...
+            </p>
+
+        </section>
+
+        <section> <!-- Static vs. Dynamic Websites -->
+
+            <h2>Static vs. Dynamic Websites</h2>
+            <p>
+                Das hier ist eine static Website, was heisst, dass es keine Serverlogik gibt.<br><br>
+
+                Static Websites benutzen nur HTML und CSS, werden also nicht programmiert.<br>
+                Weil du selber auch weisst wie man Websites schreibt, erkläre ich dir jetzt nicht, was diese Sprachen sind, aber es ist eben nur Text und Bilder.<br>
+                Technically benutze ich auch JavaScript, aber GitHub lässt das halt einfach kostenlos zu, keine Ahnung..
+            </p>
+            <p class="note">
+                Fun fact, ich habe bei meiner Recherche auf <a href="https://en.wikipedia.org/wiki/Hugo_(software)">Wikipedia</a> eine Software namens "Hugo" gefunden. Keine Ahnung was genau das ist, aber fand ich lustig.
+            </p>
+
+            <h4>Warum ist das jetzt ein Problem?</h4>
+            <p>
+                Es gibt Features, die ich einfach technisch nicht machen kann.<br><br>
+
+                Also wie ich schon meinte bleibt die Domain leider so hässlich, aber das alleine ist jetzt nicht wirklich schlimm..<br>
+                Was aber wirklich ein problem ist, ich kann keine Serverlogik programmieren. <br><br>
+                
+                Dass es keine serverseitige Logik gibt, heisst dass es nichts gibt, was im Hintergrund Daten verarbeitet oder dynamisch Inhalte erzeugt.<br>
+                Stattdessen besteht die Seite aus festen Dateien, die ich geschrieben habe. Wenn du eine Seite öffnest, wird sie einfach so geladen, wie ich sie vorher erstellt habe.<br><br>
+
+                In einem Online Shop kannst du zum Beispiel Produkte in deinen Warenkorb legen, um sie später zu bestellen. Dieses abspeichern wird dann vom Server übernommen, der vorher dafür programmiert wurde.
+            </p>
+
+            <h4>Was für Features kann ich also nicht machen?</h4>
+            <p>
+                Ich hatte ja bereits von einer Suggestion Box gesprochen. Meine Idee wäre, dass du ein Formular bekommst auf der Website, wo du irgendeine Idee reinschreiben kannst und wenn du fertig bist, wird es auf einem Server gespeichert, den ich dann selbst auslesen kann.<br><br>
+
+                Naja, was braucht man dafür? <i>Serverlogik</i><br>
+                Vielleicht finde ich dafür noch eine andere Lösung <i>oder</i> ich kaufe mir eine Domain und miete Server! 
+            </p>
+
+        </section>
+
+        <section> <!-- Meiner Arbeit hier -->
+
+            <h2>Wie sieht meine höchst komplexe Arbeit an dieser Website aus??</h2>
+            <p>
+                Ich meinte ja bereits, dass ich die Datein, die ich für dich schreibe bei GitHub speichere, aber das Bearbeiten passiert auf meinem PC.<br><br>
+
+                Wenn ich jetzt also eine Idee für ein neues Feature schreiben möchte, öffne ich <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code">Visual Studio Code</a> (meinen Texteditor), mache eine neue HTML Datei und schreibe den Code.<br><br>
+
+                Wenn ich dann mit meinem Code zufrieden bin, muss ich nur ein paar commands in meinem Terminal eingeben und es auf GitHub bringen.
+            </p>
+            <p class="note">
+                git add ./ <br>
+                git commit -m "Super cooles neues Feature :D" <br>
+                git push origin master <br>
+            </p>
+            <p>
+                Ohne jetzt zu technisch zu werden (vielleicht mache ich das mal in einem eigenen info dump), der Code den ich auf meinem PC geschrieben habe, wird jetzt einfach auf GitHub hinzugefügt.<br><br>
+
+                GitHub sieht es gab einen neuen push und die Website wird geupdated! Zack neues Feature, dass du dir auf deinem Handy anschauen kannst :D
+            </p>
+
+        </section>
 
     </div>
 </body>
