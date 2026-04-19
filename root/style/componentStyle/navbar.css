@@ -12,8 +12,11 @@
     border-radius: 10px;
 
     font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background: white;
+    background: #0b1020;
     cursor: pointer;
 
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
@@ -32,7 +35,7 @@
     width: 260px;
     height: 100%;
 
-    background: #f7f7ff;
+    background: #0b1020;
 
     padding-top: 70px;
 
@@ -52,7 +55,8 @@
     padding: 14px 20px;
 
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
+    text-align: left;
 
     font-size: 16px;
 }
