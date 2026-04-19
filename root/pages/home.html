@@ -1,67 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUB for Hugo :o</title>
-    <link rel="stylesheet" href="../style/home.css">
+    <title>HUB for Hugo</title>
+    <link rel="stylesheet" href="../style/homeNew.css">
     <link rel="stylesheet" href="../style/componentStyle/navbar.css">
 </head>
 <body>
+    <div class="stars"></div>
+    <script src="../assets/js/stars.js"></script>
+
     <div id="navbar"></div>
     <script src="../assets/js/fetch/fetchNavbar.js"></script>
     <script src="../assets/js/navbar.js"></script>
 
-    <section class="hero">
-        <h2>Jo! Die Website ist fertig! :O</h2>
-        <h3>Zumindest für heute...</h3> 
-        <p>
-            <br>Okay basically, es gibt jetzt diese Website und hier hau ich immer mal wieder was neues rauf... manche Sachen hab ich jetzt schon rein gebaut, andere kommen vielleicht irgendwann dazu. Ich weiss selber noch nicht genau wo das hier hingeht, aber einige Dinge habe ich schon im Kopf!<br><br>Ich wollte mich schon immer mal um sowas kümmern!
-        </p>
-        <div class="changelog-container">
-            <div class="changelog-item">
-                <h3>#7 Info Dump #1 ist fertig!</h3>
-                <p>
-                    Well well well, ich habe eine line Koks genommen und den ersten Artikel für dich runter geschrieben :D
-                </p>
-                <a href="infoDumps/howThisWebsiteWorks.html">Wie diese Website funktioniert</a>
-            </div>
-            <div class="changelog-item">
-                <h3>#6 Kleines Teaser Update und fixes</h3>
-                <p>Oh oh oh, was bin ich denn hier wieder am kochen??<br><br>Und ich habe ein paar <i>z-index issues</i> gefixt! Mhm, langsam wird es ernst.</p>
-                <a href="infoDump.html">Info Dump</a>
-            </div>
-            <div class="changelog-item">
-                <h3>#5 Neues Wort bei Word of The Week!</h3>
-                <P>Nur ein kleines Update</P>
-                <a href="wordWeek.html">Word of The Week</a>
-            </div>
-            <div class="changelog-item">
-                <h3>#4 Navigation und TODOs!!!!</h3>
-                <p>Big one!<br><br>Also, oben links gibt es jetzt einen tollen button, der die Navigation öffnet! Von da aus kommst du jetzt über all hin auf dieser Website. (Ich hoffe es funktioniert von überall aus, sollte aber eigentlich)<br><br><b>TODOs:</b><br>Eine Page, wo du jetzt sehen kannst woran ich gerade so arbeite, sehr cool, wie ich finde.<br><a href="todo.html">TODOs</a><br><br><b>Archive:</b><br>Alle kleinen features, die nicht in die Navigation passen sind von hier aus erreichbar. Dachte ich wäre cleaner, als so super viele Dinge in der Leiste..<br><a href="archive.html">Archive</a><br><br><b>Suggestion Box:</b><br>Joa, ne.. das kommt noch! Aber ich war bisher noch nicht zufrieden mit meiner Umsetzung, deswegen gibt es das noch nicht..</p>
-            </div>
-            <div class="changelog-item">
-                <h3>#3 Word of The Week!</h3>
-                <p>Neue Page mit dem Wort der Woche!<br><br>Ich glaube ich muss mal eine Navigationbar da oben machen.. die Website wird langsam unübersichtlich.<br><br>Und maybe mal eine Art pinboard, wo ich mal so kleine Dinge rein schreiben kann?<br>Suggestion Box für dich?<br>To-Do list für mich?<br><br>So viele Dinge noch zu tun.</p>
-                <a href="wordWeek.html">Word of The Week :O</a>
-            </div>
-            <div class="changelog-item">
-                <h3>#2 The History of Hank!</h3>
-                <p>Neue Page um die Geschichte von Hank für die Nachwelt zu dokumentieren!<br><br>Außerdem gab es ein paar kleine Änderungen<br><br>Sorry, nur ein kleines Update, aber mehr ist in der Mache :O</p>
-                <a href="historyOfHank.html">History of Hank</a>
-            </div>
-            <div class="changelog-item">
-                <h3>#1 Bella & Coco Photo Dump!!</h3>
-                <p>Neue Page für die Biester!</p>
-                <a href="bellaAndCoco.html">Bella & Coco</a>
-            </div>
-        </div>
-        <a href="landing.html">
-            <br><br>
-            <button>Der Geburtstags Teil von deiner Geburtstags Website!</button>
-        </a>
-    </section>
-</body>
+    <h1 class="title" id="hello"></h1>
+    <p id="splash"></p>
 
+    <!-- featured -->
+    <a href="infoDumps/howThisWebsiteWorks.html" class="feature-box">
+
+        <h2 class="feature-header"><b>🌟Featuring🌟</b></h2>
+
+        <div class="feature-content">
+            <img src="../assets/images/infoDump/best-website-builder-2982372880.jpg" alt="preview icon" class="feature-icon">
+            <span class="feature-title">Wie diese Website funktioniert</span>
+        </div>
+
+    </a>
+
+    <!-- Changelog -->
+    <div class="changelog-container">
+
+        <div class="changelog-item">
+            <h3>#8 Homepage rework :D</h3>
+            <p class="version">2.0</p>
+            <p>
+                Okayyyy, die home page sieht jetzt so aus.<br><br>
+                Oben gibt es jetzt immer einen random splash text! Es gibt noch nicht so viele im Pool, aber es werden bestimmt immer mehr :D<br><br>
+                Ich hab dem Ding jetzt eine Version gegeben.. I guess das ist jetzt Version 2.0 . Mal schauen, ob das Sinn macht.<br><br>
+                Neuer look für das Navigations Ding<br><br>
+                Und unten ist jetzt ein button, der dich zu einer random page bringt :D<br><br>
+                Ist die Homepage gut so??
+            </p>
+            <a href="homeLegacy.html">Die alte homepage</a>
+        </div>
+
+        <div class="changelog-item">
+            <h3>#7 Info Dump #1 ist fertig!</h3>
+            <p>
+                Well well well, ich habe eine line Koks genommen und den ersten Artikel für dich runter geschrieben :D
+            </p>
+            <a href="infoDumps/howThisWebsiteWorks.html">Wie diese Website funktioniert</a>
+        </div>
+
+        <div class="changelog-item">
+            <h3>#6 Kleines Teaser Update und fixes</h3>
+            <p>
+                Oh oh oh, was bin ich denn hier wieder am kochen??<br><br>Und ich habe ein paar <i>z-index issues</i> gefixt! Mhm, langsam wird es ernst.
+            </p>
+            <a href="infoDump.html">Info Dump</a>
+        </div>
+
+        <div class="changelog-item">
+            <h3>#5 Neues Wort bei Word of The Week!</h3>
+            <p>
+                Nur ein kleines Update
+            </p>
+            <a href="wordWeek.html">Word of The Week</a>
+        </div>
+
+        <div class="changelog-item">
+            <h3>#4 Navigation und TODOs!!!!</h3>
+            <p>Big one!<br><br>Also, oben links gibt es jetzt einen tollen button, der die Navigation öffnet! Von da aus kommst du jetzt über all hin auf dieser Website. (Ich hoffe es funktioniert von überall aus, sollte aber eigentlich)<br><br><b>TODOs:</b><br>Eine Page, wo du jetzt sehen kannst woran ich gerade so arbeite, sehr cool, wie ich finde.<br><a href="todo.html">TODOs</a><br><br><b>Archive:</b><br>Alle kleinen features, die nicht in die Navigation passen sind von hier aus erreichbar. Dachte ich wäre cleaner, als so super viele Dinge in der Leiste..<br><a href="archive.html">Archive</a><br><br><b>Suggestion Box:</b><br>Joa, ne.. das kommt noch! Aber ich war bisher noch nicht zufrieden mit meiner Umsetzung, deswegen gibt es das noch nicht..</p>
+        </div>
+
+        <div class="changelog-item">
+            <h3>#3 Word of The Week!</h3>
+            <p>
+                Neue Page mit dem Wort der Woche!<br><br>Ich glaube ich muss mal eine Navigationbar da oben machen.. die Website wird langsam unübersichtlich.<br><br>Und maybe mal eine Art pinboard, wo ich mal so kleine Dinge rein schreiben kann?<br>Suggestion Box für dich?<br>To-Do list für mich?<br><br>So viele Dinge noch zu tun.
+            </p>
+            <a href="wordWeek.html">Word of The Week :O</a>
+        </div>
+
+        <div class="changelog-item">
+            <h3>#2 The History of Hank!</h3>
+            <p>
+                Neue Page um die Geschichte von Hank für die Nachwelt zu dokumentieren!<br><br>Außerdem gab es ein paar kleine Änderungen<br><br>Sorry, nur ein kleines Update, aber mehr ist in der Mache :O
+            </p>
+            <a href="historyOfHank.html">History of Hank</a>
+        </div>
+
+        <div class="changelog-item">
+            <h3>#1 Bella & Coco Photo Dump!!</h3>
+                <p>
+                    Neue Page für die Biester!
+                </p>
+            <a href="bellaAndCoco.html">Bella & Coco</a>
+        </div>
+
+    </div>
+
+    <!-- <div class="message">
+        <p id="message-text"></p>
+    </div> -->
+
+    <!-- <div class="buttons">
+        <button onclick="goTo('games.html')">🎮 games</button>
+        <button onclick="goTo('messages.html')">💌 messages</button>
+        <button onclick="goTo('stuff.html')">🧪 stuff</button>
+    </div> -->
+
+    <button class="surprise" onclick="randomProject()">
+        🎲 surprise me
+    </button>
+
+    <p class="version">version 2.0</p>
+
+    <script src="../assets/js/home.js"></script>
 </body>
 </html>
